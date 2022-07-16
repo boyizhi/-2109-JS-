@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div变色</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            float: left;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn">点击将div变成红色</button>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+<script>
+    var divDom = document.getElementsByTagName('div')
+    var btn = document.getElementById('btn')
+    btn.onclick = function () {
+        for (var i = 0; i < divDom.length; i++) {
+            divDom[i].style.backgroundColor = 'red'
+        }
+    }
+</script>
+
+</html>

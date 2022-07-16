@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页换肤</title>
+    <style>
+        .box {
+            overflow: hidden;
+        }
+
+        #one {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            float: left;
+            margin-left: 30px;
+        }
+
+        #two {
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            float: left;
+            margin-left: 30px;
+        }
+
+        #three {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            float: left;
+            margin-left: 30px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        li {
+            width: 100px;
+            background-color: skyblue;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+    </div>
+    <div class="content">
+        <ul>
+            <li>
+                <a href="">新闻</a>
+            </li>
+            <li>
+                <a href="">体育</a>
+            </li>
+            <li>
+                <a href="">游戏</a>
+            </li>
+            <li>
+                <a href="">跳舞</a>
+            </li>
+            <li>
+                <a href="">新闻</a>
+            </li>
+        </ul>
+
+    </div>
+</body>
+<script>
+    var one = document.getElementById('one')
+    var two = document.getElementById('two')
+    var three = document.getElementById('three')
+    var bodyDom = document.querySelector('body')
+    one.onclick = function () {
+        bodyDom.style.backgroundColor = 'red'
+    }
+    two.onclick = function () {
+        bodyDom.style.backgroundColor = 'green'
+    }
+    three.onclick = function () {
+        bodyDom.style.backgroundColor = 'black'
+    }
+</script>
+
+</html>
